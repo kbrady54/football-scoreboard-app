@@ -1,0 +1,38 @@
+import React from "react";
+import "./Scoreboard.css";
+
+const temporaryScoreTemplate = {
+  homeTeam: "NE",
+  awayTeam: "ATL",
+  homeScore: "3",
+  awayScore: "28",
+  quarter: "3",
+  time: "13:22"
+};
+
+class Scoreboard extends React.Component {
+  render() {
+    return (
+      <div className="Scoreboard">
+        <div className="team-name-container">
+          <div className="team-name">
+            <p>{temporaryScoreTemplate.awayTeam}</p>
+          </div>
+          <div className="team-name">
+            <p>{temporaryScoreTemplate.homeTeam}</p>
+          </div>
+        </div>
+        <div className="team-score-container">
+          <div className="team-score">
+            <p>{temporaryScoreTemplate.awayScore}</p>
+          </div>
+          <div className="team-score">
+            <p>{temporaryScoreTemplate.homeScore}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Scoreboard;
