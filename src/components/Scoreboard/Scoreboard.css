@@ -9,7 +9,8 @@
 }
 
 .team-name-container,
-.team-score-container {
+.team-score-container,
+.game-info-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,4 +33,24 @@
 
 .team-score + .team-score {
   border-left: solid 1px white;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+  flex: 1 1 0;
+  border-top: 1px white solid;
+}
+
+.game-info-label {
+  color: white;
+  background-color: black;
+}
+
+.game-info-display {
+  color: yellow;
+  background-color: black;
 }

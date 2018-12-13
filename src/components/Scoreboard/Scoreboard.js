@@ -7,7 +7,9 @@ const temporaryScoreTemplate = {
   homeScore: "3",
   awayScore: "28",
   quarter: "3",
-  time: "13:22"
+  time: "13:22",
+  down: "3",
+  distance: "6"
 };
 
 class Scoreboard extends React.Component {
@@ -28,6 +30,40 @@ class Scoreboard extends React.Component {
           </div>
           <div className="team-score">
             <p>{temporaryScoreTemplate.homeScore}</p>
+          </div>
+        </div>
+        <div className="game-info-container">
+          <div className="game-info">
+            <div className="game-info-label">
+              <p>Dn</p>
+            </div>
+            <div className="game-info-display">
+              <p>{temporaryScoreTemplate.down}</p>
+            </div>
+          </div>
+          <div className="game-info">
+            <div className="game-info-label">
+              <p>Dist</p>
+            </div>
+            <div className="game-info-display">
+              <p>{temporaryScoreTemplate.distance}</p>
+            </div>
+          </div>
+          <div className="game-info">
+            <div className="game-info-label">
+              <p>Qtr</p>
+            </div>
+            <div className="game-info-display">
+              <p>{temporaryScoreTemplate.quarter}</p>
+            </div>
+          </div>
+          <div className="game-info">
+            <div className="game-info-label">
+              <p>Time</p>
+            </div>
+            <div className="game-info-display">
+              <p>{temporaryScoreTemplate.time}</p>
+            </div>
           </div>
         </div>
       </div>
